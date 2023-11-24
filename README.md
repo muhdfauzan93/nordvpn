@@ -1,5 +1,15 @@
 # Nordvpn Meshnet
 
+### Run Docker Container
+```
+docker run -ti --cap-add=NET_ADMIN --cap-add=NET_RAW ghcr.io/muhdfauzan93/nordvpn/app:latest
+```
+
+### Run Docker Compose
+```
+docker-compose up -d
+```
+
 1. Login to Nordvpn
 
 ```

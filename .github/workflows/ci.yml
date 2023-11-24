@@ -19,7 +19,7 @@ jobs:
       - name: Publish to Github Packages Registry
         uses: elgohr/Publish-Docker-Github-Action@v5
         with:
-          name: fauzan/nordvpn
+          name: muhdfauzan93/nordvpn/app
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io

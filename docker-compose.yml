@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  nordvpn:
+    image: nordvpn-mesh
+    build:
+      context: .
+      dockerfile: Dockerfile
+    cap_add:
+      - NET_ADMIN               
+      - NET_RAW        
+    hostname: meshnet
+    restart: unless-stopped
+    tty: true
